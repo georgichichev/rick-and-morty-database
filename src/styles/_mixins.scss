@@ -1,0 +1,7 @@
+@mixin cardIcon($height, $width){
+    display: inline-block;
+    height: $height;
+    width: $width;
+    margin-right: 5px;
+    border-radius: 50%;
+}

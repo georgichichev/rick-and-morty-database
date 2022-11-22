@@ -1,0 +1,22 @@
+@import "./header";
+@import "./data";
+@import "card";
+@import "search";
+@import "details";
+@import "mixins";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    //overflow-y: scroll;
+}
+
+main{
+    background-color: #202329;
+    min-height: 630px;
+    display: flex;
+    flex-direction: column;
+}
