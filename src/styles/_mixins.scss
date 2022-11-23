@@ -1,7 +1,31 @@
-@mixin cardIcon($height, $width){
+@mixin statusIcon($height, $width){
     display: inline-block;
     height: $height;
     width: $width;
-    margin-right: 5px;
+    margin-right: 0.5rem;
     border-radius: 50%;
+}
+
+@mixin statusIconVariants(){
+    &--alive{
+        background-color: #55cc44;
+    }
+
+    &--dead{
+        background-color: #d63d2e;
+    }
+
+    &--unknown{
+        background-color: #9e9e9e;
+    }
+}
+
+@mixin poppinsFont($weight){
+    font-family: 'Poppins', sans-serif;
+    font-weight: $weight;
+}
+
+@mixin robotoFont($weight){
+    font-family: 'Roboto', sans-serif;
+    font-weight: $weight;
 }

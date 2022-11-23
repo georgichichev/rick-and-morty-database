@@ -1,27 +1,32 @@
+@import "variables";
+@import "mixins";
+
 .header{
-    font-family: 'Roboto', sans-serif;
-    h1{
+    @include robotoFont(900);
+    &__title{
         text-align: center;
-        font-size: 6rem;
-        padding: 4rem;
+        font-size: 10rem;
+        padding: 6rem;
         font-weight: 900;
     }
 }
 
-.nav ul{
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    gap: 25px;
-    list-style-type: none;
-    a{
+.nav{
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem;
+        gap: 2.5rem;
+        list-style-type: none;
+    }
+    &__link{
         text-decoration: none;
         color: black;
-        font-size: 21px;
+        font-size: 2rem;
         font-weight: 700;
         &:hover{
             transition: 0.1s ease;
-            color: #FF9800;
+            color: $hoverOrange;
         }
     }
 }

@@ -35,7 +35,7 @@ const Characters = () => {
                     handleChange={handleChange}
                     searchValue={searchValue}
                 />
-                <p className="statusText">Loading...</p>
+                <p className="data__status-text">Loading...</p>
             </>
         )
     }
@@ -47,7 +47,7 @@ const Characters = () => {
                     handleChange={handleChange}
                     searchValue={searchValue}
                 />
-                <p className="statusText">No results found.</p>
+                <p className="data__status-text">No results found.</p>
             </>
         )
     }

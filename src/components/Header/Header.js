@@ -4,19 +4,33 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="nav">
-                <ul>
-                    <li>
-                        <Link to="/characters">Characters</Link>
+                <ul className="nav__list">
+                    <li className="nav__item">
+                        <Link
+                            to="/characters"
+                            className="nav__link"
+                        >
+                            Characters
+                        </Link>
                     </li>
-                    <li>
-                        <Link to="/locations">Locations</Link>
+                    <li className="nav__item">
+                        <Link
+                            to="/locations"
+                            className="nav__link"
+                        >
+                            Locations
+                        </Link>
                     </li>
-                    <li>
-                        <Link to="/episodes">Episodes</Link>
+                    <li className="nav__item">
+                        <Link
+                            to="/episodes"
+                            className="nav__link"
+                        >
+                            Episodes
+                        </Link>
                     </li>
                 </ul>
             </nav>
-            <h1>Rick and Morty Database</h1>
         </header>
     )
 }

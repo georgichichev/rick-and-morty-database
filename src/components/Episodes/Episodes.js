@@ -8,7 +8,7 @@ import useDebounce from "../../hooks/useDebounce.js";
 
 const Episodes = () => {
     const [searchValue, setSearchValue] = useState('');
-    const debouncedSearch = useDebounce(searchValue, 500);
+    const debouncedSearch = useDebounce(searchValue, 600);
 
     const {
         data,
@@ -35,7 +35,7 @@ const Episodes = () => {
                     handleChange={handleChange}
                     searchValue={searchValue}
                 />
-                <p className="statusText">Loading...</p>
+                <p className="data__status-text">Loading...</p>
             </>
         )
     }
@@ -47,7 +47,7 @@ const Episodes = () => {
                     handleChange={handleChange}
                     searchValue={searchValue}
                 />
-                <p className="statusText">No results found.</p>
+                <p className="data__status-text">No results found.</p>
             </>
         )
     }

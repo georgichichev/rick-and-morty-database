@@ -8,7 +8,7 @@ import useDebounce from "../../hooks/useDebounce.js";
 
 const Locations = () => {
     const [searchValue, setSearchValue] = useState('');
-    const debouncedSearch = useDebounce(searchValue, 500);
+    const debouncedSearch = useDebounce(searchValue, 600);
 
     const {
         data,

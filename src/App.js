@@ -14,6 +14,7 @@ function App() {
     return (
         <BrowserRouter>
             <Header/>
+            <h1 className="header__title">Rick and Morty Database</h1>
             <main>
                 <QueryClientProvider client={queryClient}>
                     <Routes>

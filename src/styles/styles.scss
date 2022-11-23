@@ -10,13 +10,13 @@
     margin: 0;
     padding: 0;
 }
-body{
-    //overflow-y: scroll;
+
+html {
+    font-size: 62.5%;
 }
 
 main{
     background-color: #202329;
-    min-height: 630px;
     display: flex;
     flex-direction: column;
 }

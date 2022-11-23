@@ -1,59 +1,55 @@
 @import "mixins";
+@import "variables";
 
 .card{
-    background-color: #3c3e44;
-    width: 600px;
-    height: 220px;
+    background-color: $backgroundGray;
+    width: 52rem;
     display: flex;
     border-radius: 12px;
-}
-
-.card__info{
-    width: 100%;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    a{
-        font-weight: 900;
-        font-size: 1.2rem;
+    &__info{
+        width: 100%;
+        padding: 2rem;
+        @include poppinsFont(300);
+    }
+    &__title, &__link{
+        font-size: 1.9rem;
+    }
+    &__link{
+        @include poppinsFont(900);
         letter-spacing: 0.8px;
         cursor: pointer;
         text-decoration: none;
-        color: #f5f5f5;
+        color: $fontWhite;
         &:hover{
             transition: 0.1s ease;
-            color: #FF9800;
+            color: $hoverOrange;
         }
     }
-    h3{
-        font-size: 1rem;
-        font-weight: 300;
-    }
-    h4{
-        font-size: 15px;
+    &__status-text{
+        font-size: 1.3rem;
         display: inline-block;
     }
-    label{
-        color: #9b9d9e;
-        font-size: 15px;
+    &__label{
+        color: $labelGray;
+        font-size: 1.5rem;
+    }
+    &__subtitle{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    &__img{
+        max-width: 19rem;
+        border-radius: 12px 0 0 12px;
+    }
+    &__status-icon{
+        @include statusIcon(1rem, 1rem);
+        @include statusIconVariants();
+    }
+    &__episode-number{
+        margin: auto;
+        text-align: center;
+        font-size: 8rem;
+        padding: 4rem 7rem;
     }
 }
 
-.card__img{
-    border-radius: 12px 0 0 12px;
-}
-
-.card__icon{
-    @include cardIcon(10px, 10px)
-}
-
-.card__icon--alive{
-    background-color: #55cc44;
-}
-
-.card__icon--dead{
-    background-color: #d63d2e;
-}
-
-.card__icon--unknown{
-    background-color: #9e9e9e;
-}

@@ -1,27 +1,20 @@
+@import "variables";
+
 .search{
     position: relative;
-    gap: 10px;
+    gap: 1rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5rem;
     width: 100%;
-    input{
-        padding: 15px;
+    &__input{
+        padding: 1.5rem;
         width: 30%;
-        background-color: #42444b;
+        background-color: $backgroundGray;
         border: none;
         border-radius: 6px;
-        color: #f5f5f5;
+        color: $fontWhite;
         &:focus{
             outline: none;
         }
     }
-}
-
-.statusText{
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    text-align: center;
-    color: #f5f5f5;
-    font-size: 4rem;
-    margin-top: 5rem;
 }

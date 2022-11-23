@@ -23,22 +23,22 @@ const Details = () => {
     }
 
     return(
-        <div className="detailsContainer">
-            <img src={data.image} alt={"detailsImage"}/>
-            <div className="detailsInfo">
-                <h1>{data.name}</h1>
-                <div className="statusBox">
-                    <span className={`details__icon card__icon--${data.status.toLowerCase()}`}/>
-                    <h4>{data.status} - {data.species}</h4>
+        <div className="details">
+            <img className="details__img" src={data.image} alt={"detailsImage"}/>
+            <div>
+                <h2 className="details__title">{data.name}</h2>
+                <div className="details__status-box">
+                    <span className={`details__status-icon details__status-icon--${data.status.toLowerCase()}`}/>
+                    <h4 className="details__status-text">{data.status} - {data.species}</h4>
                 </div>
-                <label>Gender:</label>
-                <h3>{data.gender}</h3>
-                <label>Origin:</label>
-                <h3>{data.origin.name}</h3>
-                <label>Location:</label>
-                <h3>{data.location.name}</h3>
-                <label>Episodes:</label>
-                <h3>{data.episode.length}</h3>
+                <label className="details__label">Gender:</label>
+                <h3 className="details__subtitle">{data.gender}</h3>
+                <label className="details__label">Origin:</label>
+                <h3 className="details__subtitle">{data.origin.name}</h3>
+                <label className="details__label">Location:</label>
+                <h3 className="details__subtitle">{data.location.name}</h3>
+                <label className="details__label">Episodes:</label>
+                <h3 className="details__subtitle">{data.episode.length}</h3>
             </div>
         </div>
     )
